@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Google Map Project</title>
+		<link rel="stylesheet" href="style/style.css">
+		<script src="https://kit.fontawesome.com/c939d0e917.js" defer></script>
+		<script src="js/index.js" defer></script>
+	</head>
+	
+	
+	<body>
+
+		<div class="locatorTitle">Map Locator</div>
+
+		  <div class="search-container">
+
+			<div class="search">
+				<input id="zip-code-input" name="zip-code" type="text"  onkeyup="onEnter(event)" placeholder="Enter Zip"/>
+				<i onclick="getStores()" class="fas fa-search"></i>
+			</div>
+		</div>
+
+		<div class="store-list-container">
+
+			<div class="store-list">
+
+				<div class="store-container">
+					<div class="row">
+                     <div class="left">
+					<div class="store-address enter-zip">1245 N Spring St
+						Los Angeles, CA 90012 </div>
+						<div class="store-phone-number find-stores">+184736363, +1000000000</div></div>
+						<div class="right"><i class="icon">1</i></div>
+						</div>
+						<hr>
+				</div>
+
+
+
+				
+			</div>
+			
+		</div>
+	
+	
+	
+
+
+
+
+		
+<div id="map"></div>
+		</script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+    </script>
+	</body>
+	
+</html>
